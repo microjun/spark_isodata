@@ -18,7 +18,7 @@ import scala.util.control.Breaks._
   * Date: 2019/3/27
   * Time: 14:23
   */
-object K_means {
+object K_means_2 {
     val HADOOP_HOST: String = "hdfs://" + "localhost" + ":9000"
     val MASTER: String = "local"
     //    val MASTER: String = "spark://172.16.23.24:7077"
@@ -42,21 +42,17 @@ object K_means {
         val width: Int = image_df.select("image.width").first().get(0).toString.toInt
         val data: Array[Byte] = image_df.select("image.data").first().getAs[Array[Byte]](0)
 
-        val lab_vec: Array[Vector] = getLabVec(width, height, getLabArr(width, height, data))
-        val image_rdd = spark.sparkContext.parallelize(lab_vec)
-
-        val old_k_center = new Array[Vector](K)
-        val new_k_center = image_rdd.takeSample(true, K)
-
-
         for (iter <- 0 until K) {
             cluster(iter) = new ArrayList[Vector]
         }
+        val lab_vec: Array[Vector] = getLabVec(width, height, getLabArr(width, height, data))
+        val image_rdd = spark.sparkContext.parallelize(lab_vec)
+        val new_k_center = image_rdd.takeSample(true, K)
 
         var iter: Int = 1
-        val max_iter: Int = 10
+        var tem_dist = 1.0
         breakable(
-            while (iter < max_iter) {
+            while (true) {
                 for (iter <- cluster.indices) {
                     cluster(iter).clear()
                 }
@@ -64,6 +60,11 @@ object K_means {
                 // print center index
                 println("the " + iter + " times: ")
                 new_k_center.foreach(println)
+                println(tem_dist)
+
+                if (tem_dist < 0.001) {
+                    break()
+                }
 
                 val closest = image_rdd.map(iter => (closestCenter(iter, new_k_center), (iter, 1)))
                 val mapping = closest.groupBy(x => x._1)
@@ -74,11 +75,14 @@ object K_means {
                     mapping._1, divVector(mapping._2._1, mapping._2._2)
                 )).collect()
 
-                cluster.foreach(center => updateCenter(center))
-                for (i <- 0 until K) {
-                    new_k_center(i) = temp_center.get(i)
+                tem_dist = 0.0
+                for (item <- newPoint) {
+                    tem_dist += Math.sqrt(Vectors.sqdist(item._2, new_k_center(item._1)))
                 }
 
+                for (item <- newPoint) {
+                    new_k_center(item._1) = item._2
+                }
                 iter = iter + 1
             }
         )
