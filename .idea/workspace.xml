@@ -1,13 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af981e31-c128-472a-8cf2-3fe5ba63572f" name="Default Changelist" comment="3.30">
-      <change beforePath="$PROJECT_DIR$/result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_1.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_2.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/test/ImageToText.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/test/ImageToText.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/test/WordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/test/WordCount.scala" afterDir="false" />
+    <list default="true" id="af981e31-c128-472a-8cf2-3fe5ba63572f" name="Default Changelist" comment="k-means">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_31.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_29.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_2.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_30.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/spark/util/ImageSchema.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/spark/util/ImageSchema.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$closestCenter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$getLabArr$1$$anonfun$apply$mcVI$sp$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$getLabArr$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$getLabVec$1$$anonfun$apply$mcVI$sp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$getLabVec$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$main$2$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$main$2$$anonfun$apply$mcV$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$main$2$$anonfun$apply$mcV$sp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$main$2$$anonfun$apply$mcV$sp$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$main$2$$anonfun$apply$mcV$sp$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$updateCenter$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$updateCenter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$updateCenter$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$writeImageByByte$1$$anonfun$apply$mcVI$sp$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$writeImageByByte$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$writeImageByLabDouble$1$$anonfun$apply$mcVI$sp$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$writeImageByLabDouble$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$writeImageByLabDouble$2$$anonfun$apply$mcVI$sp$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$$anonfun$writeImageByLabDouble$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$addVector$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$closestCenter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$divVector$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$getLabArr$1$$anonfun$apply$mcVI$sp$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$getLabArr$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$getLabVec$1$$anonfun$apply$mcVI$sp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$getLabVec$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$3$$anonfun$apply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$apply$mcV$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$apply$mcV$sp$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$apply$mcV$sp$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2$$anonfun$apply$mcV$sp$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$main$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$updateCenter$1$$anonfun$apply$mcVI$sp$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$updateCenter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$updateCenter$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$writeImageByByte$1$$anonfun$apply$mcVI$sp$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$writeImageByByte$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$writeImageByLabDouble$1$$anonfun$apply$mcVI$sp$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$writeImageByLabDouble$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$writeImageByLabDouble$2$$anonfun$apply$mcVI$sp$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$$anonfun$writeImageByLabDouble$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/spark/K_means_2.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,37 +71,54 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_30.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+            <state relative-caret-position="425">
+              <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_2.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_31.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+            <state relative-caret-position="73">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="e#19#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result.txt">
+        <entry file="file://$PROJECT_DIR$/image.jpg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/util/Rgb.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="-1375">
+              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_1.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/test/ImageToText.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="67" column="104" selection-start-line="67" selection-start-column="104" selection-end-line="67" selection-end-column="104" />
+            <state relative-caret-position="206">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_29.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
               <folding>
                 <element signature="e#19#40#0" expanded="true" />
               </folding>
@@ -79,6 +147,10 @@
       <find>39</find>
       <find>4040</find>
       <find>Lab2Rgb</find>
+      <find>cluster</find>
+      <find>closestCenter</find>
+      <find>updateCenter</find>
+      <find>3</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -108,6 +180,7 @@
         <option value="$PROJECT_DIR$/result.txt" />
         <option value="$PROJECT_DIR$/src/main/scala/com/spark/K_means_1.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/spark/K_means_2.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_31.scala" />
       </list>
     </option>
   </component>
@@ -126,7 +199,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="1142" />
+    <option name="width" value="964" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -146,32 +219,6 @@
               <item name="test2" type="b2602c69:ProjectViewProjectNode" />
               <item name="test2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="test2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="test2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="test2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -182,15 +229,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="D:/Program/android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554021570945" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554032513421" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spark" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\workspace\scala_workspace\test2\src\main\scala\com\keke" />
       <recent name="D:\workspace\scala_workspace\test2" />
@@ -208,7 +258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.K_means_1">
+  <component name="RunManager" selected="Application.K_means_3_31">
     <configuration name="Imagetotext" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.spark.test.ImageToText" />
       <module name="test2" />
@@ -223,7 +273,20 @@
       </method>
     </configuration>
     <configuration name="K_means_1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.K_means_1" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.K_means_3_29" />
+      <module name="test2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="K_means_3_31" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.K_means_3_31" />
       <module name="test2" />
       <extension name="coverage">
         <pattern>
@@ -236,7 +299,7 @@
       </method>
     </configuration>
     <configuration name="ReadImage" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.K_means_2" />
+      <option name="MAIN_CLASS_NAME" value="com.spark.K_means_3_30" />
       <module name="test2" />
       <extension name="coverage">
         <pattern>
@@ -261,26 +324,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.spark.test.WordCount" />
-      <module name="test2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spark.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.K_means_3_31" />
         <item itemvalue="Application.K_means_1" />
         <item itemvalue="Application.ReadImage" />
         <item itemvalue="Application.Imagetotext" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.WordCount" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +349,7 @@
       <workItem from="1553830390631" duration="12413000" />
       <workItem from="1553920301281" duration="69000" />
       <workItem from="1553920509305" duration="20931000" />
-      <workItem from="1554010718706" duration="1946000" />
+      <workItem from="1554010718706" duration="8581000" />
     </task>
     <task id="LOCAL-00001" summary="3.30">
       <created>1553953730514</created>
@@ -312,7 +362,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77825000" />
+    <option name="totallyTimeSpent" value="84460000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -322,21 +372,22 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.13177083" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.13486141" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32867885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.37311828" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.42511013" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5907591" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" x="3" y="368" width="1914" height="313" id="Terminal" order="7" visible="true" weight="0.38817203" />
+      <window_info anchor="bottom" x="3" y="368" width="1914" height="313" id="Terminal" order="7" weight="0.39784947" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005208" side_tool="true" weight="0.45483872" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3075269" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" x="92" y="92" width="1736" height="866" id="Byte Code Viewer" type="FLOATING" />
       <window_info anchor="right" id="Maven" order="0" />
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -347,7 +398,7 @@
       <window_info anchor="right" id="Commander" order="7" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Structure" order="10" visible="true" weight="0.16510417" />
+      <window_info anchor="right" id="Structure" order="10" visible="true" weight="0.16897655" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +406,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3.30" />
-    <option name="LAST_COMMIT_MESSAGE" value="3.30" />
+    <MESSAGE value="k-means" />
+    <option name="LAST_COMMIT_MESSAGE" value="k-means" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/keke/App.scala" />
@@ -391,9 +443,6 @@
     <entry file="file://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib_2.11/2.4.0/spark-mllib_2.11-2.4.0.pom">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/image.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/keke/HelloWord.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/util/ImageSchema.scala">
       <provider selected="true" editor-type-id="text-editor">
@@ -419,13 +468,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/output.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/util/Rgb.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/output.txt" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-mllib-local_2.11/2.4.0/spark-mllib-local_2.11-2.4.0.jar!/org/apache/spark/ml/linalg/Vector.class">
@@ -459,13 +501,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/scriptFile.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/test/ImageToText.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/test/WordCount.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -487,20 +522,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_1.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/test/ImageToText.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="67" column="104" selection-start-line="67" selection-start-column="104" selection-end-line="67" selection-end-column="104" />
+        <state relative-caret-position="206">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_29.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="69" column="44" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
           <folding>
             <element signature="e#19#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_2.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_30.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="86" column="13" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        <state relative-caret-position="425">
+          <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/util/Rgb.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1375">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/output0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/output1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/output2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/output3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/spark/K_means_3_31.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#19#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
