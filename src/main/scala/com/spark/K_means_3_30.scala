@@ -21,7 +21,7 @@ import scala.util.control.Breaks._
 object K_means_3_30 {
     val HADOOP_HOST: String = "hdfs://" + "localhost" + ":9000"
     val MASTER: String = "local"
-    //    val MASTER: String = "spark://172.16.23.24:7077"
+    //    val MASTER: String = "spark://219.245.196.115:7077"
 
     val K: Int = 3
     //    var cluster:Array[Vector] = new Array[Vector](K)
@@ -30,6 +30,8 @@ object K_means_3_30 {
 
 
     def main(args: Array[String]): Unit = {
+
+        val begin_time = System.currentTimeMillis()
 
         val spark = SparkSession.builder()
             .appName("ReadImage")
@@ -88,6 +90,9 @@ object K_means_3_30 {
         )
 
         spark.stop()
+
+        val end_time = System.currentTimeMillis()
+        println(end_time - begin_time)
 
     }
 

@@ -30,7 +30,7 @@ object K_means_3_31 {
             .master(MASTER)
             .getOrCreate
 
-        val image_df = spark.read.format("image").load(HADOOP_HOST + "/user/test/images.jpg")
+        val image_df = spark.read.format("image").load(HADOOP_HOST + "/user/test/image.jpg")
         val height: Int = image_df.select("image.height").first().get(0).toString.toInt
         val width: Int = image_df.select("image.width").first().get(0).toString.toInt
         val data: Array[Byte] = image_df.select("image.data").first().getAs[Array[Byte]](0)
@@ -51,14 +51,17 @@ object K_means_3_31 {
                     break()
                 }
 
-                val closest = image_rdd.map(iter => (
-                    closestCenter(iter, new_k_center), (iter, 1)
-                ))
-                val mapping = closest.groupByKey()
-                val pointStats = mapping.map(iter => (iter._1, iter._2.reduce((x1, x2) => (addVector(x1._1, x2._1), x1._2 + x2._2))))
-
-                val newPoint = pointStats.map(iter => (
-                    iter._1, divVector(iter._2._1, iter._2._2)
+                val closest = image_rdd.map(
+                    iter => (
+                        closestCenter(iter, new_k_center), (iter, 1)
+                    )
+                )
+                val mapping = closest.groupBy(x => x._1)
+                val pointStats = mapping.map(pair => pair._2.reduceLeft[(Int, (Vector, Int))] {
+                    case ((id1, (x1, y1)), (id2, (x2, y2))) => (id1, (addVector(x1, x2), y1 + y2))
+                })
+                val newPoint = pointStats.map(mapping => (
+                    mapping._1, divVector(mapping._2._1, mapping._2._2)
                 )).collect()
 
                 tem_dist = 0.0
